@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Qwitcher+Grypen:wght@700&family=Work+Sans&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::after,
+::before{
+    box-sizing: border-box;
+}
+
+.light{
+    --BG: #fff;
+    --COLOR: #737373;
+    --COLOR-D: #000;
+    --IMP: #00e6ac;
+    --HOVER: #89edd4;
+    --TITLE: #fff;
+    --PROFILE: hsla(165, 100%, 53%, 0.756);
+    --ERROR: #ff0000;
+}
+
+.dark{
+    --BG: #00001a;
+    --COLOR: #f2f2f2;
+    --COLOR-D: #fff;
+    --IMP: #ff0080;
+    --HOVER: #e04b91;
+    --TITLE: #fff;
+    --PROFILE: hsla(324, 94%, 54%, 0.938);
+    --ERROR: #ff0000;
+}
+
+#root{
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1{
+    font-family: 'Lora', serif;
+}
+h1,
+h2,
+h3,
+h4 {
+    color: var(--COLOR-D);
+}
+
+p,
+input,
+textarea{
+    font-size: 1.1rem;
+    color: var(--COLOR);
+}
+label{
+    font-size: 1.2rem;
+    color: var(--IMP);
+    font-weight: 900;
+}
+input,
+textarea{
+    padding: 5px 10px;
+    color: var(--IMP);
+    background-color: var(--BG);
+    border: 2px solid var(--IMP);
+    outline: none;
+}
+
+a{
+    font-size: 1.19rem;
+    text-decoration: none;
+    color: var(--IMP);
+}
+
+a:hover{
+    color: var(--HOVER);
+}
+
+button{
+    color: var(--TITLE);
+    background-color: var(--IMP);
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    background-color: var(--HOVER);
+}
+
+@media screen and (max-width: 400px){
+    h1,
+    h2, h3, h4{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    a, button{
+        font-size: 1rem;
+    }
+}
+
